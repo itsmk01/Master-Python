@@ -89,7 +89,7 @@ def call_ingredients() :
         return "on"
     else :
         switch = input("On or Off Coffee Machine : ").lower()
-        return "off"
+        return switch
 
 
 switch = "on"
