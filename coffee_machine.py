@@ -86,7 +86,10 @@ def call_ingredients() :
         add_milk = int(input("Amount of milk in ml is : "))
         add_coffee = int(input("Amount of coffee in gram is : "))
         add_ingredients(add_water, add_milk, add_coffee)
-
+        return "on"
+    else :
+        switch = input("On or Off Coffee Machine : ").lower()
+        return "off"
 
 
 switch = "on"
@@ -122,51 +125,51 @@ while switch == "on" :
         if not check_resources(item="water", flavour=choice):
             clear()
             print(f"Sorry there is not enough water. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="milk", flavour=choice):
             clear()
             print(f"Sorry there is not enough milk. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="coffee", flavour=choice):
             clear()
             print(f"Sorry there is not enough coffee. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         update_resources(water_used=MENU["espresso"]["ingredients"]["water"] ,milk_used=MENU["espresso"]["ingredients"]["milk"] , coffee_used=MENU["espresso"]["ingredients"]["coffee"])
     elif choice == "latte" :
         if not check_resources(item="water", flavour=choice):
             clear()
             print(f"Sorry there is not enough water. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="milk", flavour=choice):
             clear()
             print(f"Sorry there is not enough milk. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="coffee", flavour=choice):
             clear()
             print(f"Sorry there is not enough coffee. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         update_resources(water_used=MENU["latte"]["ingredients"]["water"], milk_used=MENU["latte"]["ingredients"]["milk"], coffee_used=MENU["latte"]["ingredients"]["coffee"])
     elif choice == "cappuccino" :
         if not check_resources(item="water", flavour=choice):
             clear()
             print(f"Sorry there is not enough water. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="milk", flavour=choice):
             clear()
             print(f"Sorry there is not enough milk. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         elif not check_resources(item="coffee", flavour=choice):
             clear()
             print(f"Sorry there is not enough coffee. Your Money will be refunded.")
-            call_ingredients()
+            switch = call_ingredients()
             continue
         update_resources(water_used=MENU["cappuccino"]["ingredients"]["water"], milk_used=MENU["cappuccino"]["ingredients"]["milk"], coffee_used=MENU["cappuccino"]["ingredients"]["coffee"])
     
