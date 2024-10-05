@@ -80,7 +80,7 @@ def calculate_change(flavour, note100_used, note50_used, note20_used, note10_use
     return change
 
 def call_ingredients() :
-    option = input("Do you want to add ingredients ? (Yes/No) ").lower()
+    option = input("Do you want to add ingredients in Coffee Machine ? (Yes/No) ").lower()
     if option == "yes" :
         add_water = int(input("Amount of water in ml is : "))
         add_milk = int(input("Amount of milk in ml is : "))
