@@ -12,9 +12,6 @@ This project simulates a coffee machine using Python. The user can select differ
 ## Technologies Used
 - Python 3.12.7
 
-## 6. **How to Use**
-Give instructions on how to run and use your project, along with example commands or inputs.
-
 ```markdown
 ## How to Use
 1. Run the script and follow the on-screen instructions to select a coffee type.
