@@ -8,7 +8,7 @@ This project simulates a coffee machine using Python. The user can select differ
 - Menu with different coffee options (Espresso, Latte, Cappuccino)
 - Checks inventory of ingredients (water, milk, coffee)
 - Calculates the total cost of the selected coffee
-- Ability to add coins
+- Ability to add ingredients and coins
 ## Technologies Used
 - Python 3.12.7
 
